@@ -17,7 +17,7 @@ const Navbar = () => {
     }
     return (
         <div className='sticky top-0 bg-white left-0 right-0 z-50'>
-        <div className='  sm:flex justify-between items-center md:max-w-[90%] md:ml-[5%] md:mr-[5%] p-4 '>
+        <div className=' sm:flex justify-between items-center md:max-w-[90%] md:ml-[5%] md:mr-[5%] p-4 '>
             <div className='flex items-center mb-4  gap-2'>
                 <Link to="/">
                 <img  src={Logo} alt="logo" className='w-35 h-15' />
@@ -107,45 +107,45 @@ const Navbar = () => {
         </div>
 
 
-        <div className={ `absolute top-0 left-0 bottom-0 right-0 overflow-hidden bg-white transition-all duration-300 ease-in-out ${isOpen ? 'w-100%' : 'w-0'}`}>
-            <div className='flex flex-col items-start  w-full'>
-                <p onClick={handleClick} className='text-2xl font-bold mb-5'>back</p>
-
+        <div className={ `absolute top- left-0 bottom-0 max-h-[200] right-0 overflow-hidden bg-white transition-all duration-300 ease-in-out pl-5  ${isOpen ? 'w-100%' : 'w-0'}`}>
+            <div className='flex flex-col items-start text-sm text-gray-600  w-full'>
+                <p onClick={handleClick} className='text-base font-bold mb- pl-'>back</p>
+                <hr className="w-full border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
                 <NavLink 
-                className='hover:text-green-500'
+                className='hover:text-green-700'
                 onClick={handleClick}
                  to="/">
-                    <p>Home</p>
+                    <p>➤ Home</p>
                 </NavLink>
-                <hr className="w-full border-none h-[1.5px] bg-gray-700 hidden" />
+                <hr className="w-full border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
 
                 <NavLink onClick={handleClick}
-                className='hover:text-green-500'
+                className='hover:text-green-700'
                 to="/about">
-                    <p>About</p>
+                    <p>➤ About</p>
                 </NavLink>
-                <hr className="w-full border-none h-[1.5px] bg-gray-700 hidden" />
+                <hr className="w-full border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
 
                 <NavLink onClick={handleClick}
-                className='hover:text-green-500'
+                className='hover:text-green-700'
                 to="/contact">
-                    <p>Contact</p>
+                    <p>➤ Contact</p>
                 </NavLink>
-                <hr className="w-full border-none h-[1.5px] bg-gray-700 hidden" />
+                <hr className="w-full border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
 
                 <NavLink onClick={handleClick}
-                className='hover:text-green-500'
+                className='hover:text-green-700'
                 to="/media">
-                    <p>Media</p>
+                    <p>➤ Media</p>
                 </NavLink>
-                <hr className="w-full border-none h-[1.5px] bg-gray-700 hidden" />
+                <hr className="w-full border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
 
                 <NavLink  onClick={handleClick}
-                className='hover:text-green-500'
+                className='hover:text-green-700'
                 to="/services">
-                    <p>Services</p>
+                    <p>➤ Services</p>
                 </NavLink>
-                <hr className="w-full border-none h-[1.5px] bg-gray-700 hidden" />
+                <hr className=" border-non border-gray-200 h-[1px] bg-gray-700 hiddn" />
                 
                 
 
